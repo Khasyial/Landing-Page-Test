@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Modena - Landing</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="Home.css" />
+    </head>
+    <body>
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container">
+                <div class="topbar-left">Find a Store</div>
+                <div class="topbar-right">
+                    <select id="languageSwitcher">
+                        <option value="en">English</option>
+                        <option value="id" selected>Bahasa Indonesia</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- Main header -->
+        <header class="main-header">
+            <div class="container header-inner">
+                <div class="brand">
+                    <img src="images/logo-modena.png" alt="Modena Logo" class="logo-modena">
+                </div>
+
+            <!-- Main navigation -->
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                <li><a href="#" data-i18n="nav_home">Home</a></li>
+                <li><a href="#" data-i18n="nav_professional">Professional</a></li>
+                <li><a href="#" data-i18n="nav_iot">Seamless IoT</a></li>
+                <li><a href="#" data-i18n="nav_energy">Energy</a></li>
+                <li><a href="#" data-i18n="nav_program">Program</a></li>
+                <li><a href="#" data-i18n="nav_support">Support</a></li>
+                <li><a href="#" data-i18n="nav_pay">Pay</a></li>
+                </ul>
+            </nav>
+                <!-- Icons -->
+                <div class="header-actions">
+                    <button class="icon-btn" aria-label="Search">🔍</button>
+                    <button class="icon-btn" aria-label="Cart">🛒</button>
+                    <button class="icon-btn" aria-label="User">👤</button>
+                </div>
+            </div>
+        </header>
+        <!-- Sub-navbar -->
+        <div class="sub-navbar">
+            <div class="container sub-inner">
+                <div class="sub-left">
+                    <img src="images/logo_seamless.png" alt="Seamless logo" class="seamless-logo">
+                </div>
+                <div class="sub-right">
+                    <nav class="sub-nav" aria-label="Sub navigation">
+                        <ul>
+                            <li><a href="#" data-i18n="smart_lifestyle">Smart Lifestyle</a></li>
+                            <li><a href="#" data-i18n="our_products">Our Products</a></li>
+                            <li><a href="#" data-i18n="how_to_subscribe">How to Subscribe</a></li>
+                            <li><a href="#" data-i18n="b2b">B2B</a></li>
+                            <li><a href="#" data-i18n="faq">FAQ</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="sub-contact-btn" aria-label="Contact Us" data-i18n="contact_us">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <!-- HERO -->
+        <section class="hero" role="banner">
+            <img src="images/hero-bg.png" alt="Hero background" class="hero-img">
+            <div class="hero-text">
+            <h1 data-i18n="hero_title">Hydrate with<br>Peace of Mind</h1>
+            <p class="hero-sub" data-i18n="hero_sub">Enjoy MODENA appliances with no upfront cost through Seamless Go Subscription Service</p>
+            </div>
+        </section>
+        <!-- Main content -->
+        <main>
+            <!-- ========== Subscription / Gallery Section (Updated) ========== -->
+            <section class="subscription-section container">
+                <h2 class="subscription-title" data-i18n="subscription_title">Subscribe Now. Use Freely. <br>Go Worry-Free.</h2>
+
+                <p class="subscription-desc" data-i18n="subscription_desc">
+                    <strong>Subscribe to a better way of enjoying appliances with Seamless Go Subscription Service.</strong>
+                    No upfront stress, no maintenance worries—just the freedom to use without the usual ownership hassle.
+                </p>
+                <div class="subscription-gallery" aria-hidden="false">
+                    <div class="sub-card sub-card--1">
+                        <img src="images/smart_life_style_1_new.png" alt="Multiple Plans Available" loading="lazy">
+                        <div class="overlay overlay--tl" data-i18n="card1_overlay">Multiple Plans<br>Available</div>
+                    </div>
+
+                    <div class="sub-card sub-card--2">
+                        <img src="images/smart_life_style_2_new.png" alt="Customer Care" loading="lazy">
+                    </div>
+
+                    <div class="sub-card sub-card--3">
+                        <img src="images/smart_life_style_3_new.png" alt="Start From Rp240000" loading="lazy">
+                        <div class="overlay overlay--price">
+                            <div class="price-line" data-i18n="card3_price_line">Start From</div>
+                            <div class="price-value" data-i18n="card3_price_price" data-i18n="card3_price_month"><span>Rp240.000</span><small>/Month</small></div>
+                        </div>
+                    </div>
+
+                    <div class="sub-card sub-card--4">
+                        <img src="images/smart_life_style_4_new.png" alt="Seamless Care" loading="lazy">
+                        <div class="overlay overlay--small" data-i18n="card4_overlay">Seamless Care: <br>From installation to regular maintenance—all handled.</div>
+                    </div>
+                    <div class="sub-card sub-card--5">
+                        <img src="images/smart_life_style_5_new.png" alt="Product Display" loading="lazy">
+                    </div>
+                </div>
+            </section>
+            <!-- ========== end subscription ========== -->
+            <!-- ========== Slide Section (Seamless Care - Carousel) ========== -->
+            <section class="discover-section">
+                <div class="container">
+                    <div class="discover-header-row">
+                    <h2 class="discover-title" data-i18n="discover_title">All-In Care At<br>No Extra Cost</h2>
+                    <p class="discover-sub" data-i18n="discover_sub"> All the service you need, already included.
+                    <br>So you can focus on what matters — living, not maintaining.</p>
+                    </div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel" aria-roledescription="carousel" aria-label="Seamless care features">
+                            <button class="carousel-btn carousel-btn--left" aria-label="Previous slide">‹</button>
+                            <ul class="carousel-track">
+                            <li class="carousel-slide">
+                                <img src="images/discover_fix_1.png" alt="Teknisi cek water" loading="lazy">
+                                <div class="slide-caption">
+                                    <div class="caption-title" data-i18n="slide1">FREE Water Checking</div>
+                                    <div class="caption-sub">(TDS & PH)</div>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="images/discover_fix_2.png" alt="Teknisi catat cek" loading="lazy">
+                                <div class="slide-caption">
+                                    <div class="caption-title" data-i18n="slide2">4x General Checking &amp; Cleaning</div>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="images/discover_fix_3.png" alt="Teknisi ganti filter" loading="lazy">
+                                <div class="slide-caption">
+                                    <div class="caption-title" data-i18n="slide3">FREE Filter Changing</div>
+                                    <div class="caption-sub" data-i18n="slide3_sub">(Based on Replacement Cycle)</div>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="images/discover_fix_4.png" alt="Filter spares" loading="lazy">
+                                <div class="slide-caption">
+                                    <div class="caption-title" data-i18n="slide4">FREE Repair Cost</div>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="images/discover_fix_5.png" alt="Spare parts filter" loading="lazy">
+                                <div class="slide-caption">
+                                    <div class="caption-title" data-i18n="slide5">FREE Spare Parts</div>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="images/discover_fix_6.png" alt="Teknisi diskusi customer" loading="lazy">
+                                <div class="slide-caption">
+                                    <div class="caption-title" data-i18n="slide6">20% OFF for Accessories</div>
+                                </div>
+                            </li>
+                            </ul>
+                            <button class="carousel-btn carousel-btn--right" aria-label="Next slide">›</button>
+                            <div class="carousel-dots" role="tablist" aria-label="Slide navigation"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- ========== end slide section ========== -->
+        <!-- ========== Our Products (Purifier Section) ========== -->
+            <section class="product-section">
+                <div class="product-container">
+                    <div class="product-card">
+                        <p class="purifier-label" data-i18n="our_products_label">OUR PRODUCTS</p>
+                        <h2 class="purifier-title" data-i18n="purifier_title">Choose What You Need for Your Home</h2>
+                        <div class="product-inner">
+                            <div class="product-list">
+                                <button class="product-btn active" data-index="1">
+                                    <span class="num">01</span>
+                                    <span class="label">RO 5110 TWH<br><small>MODENA Top Table</small></span>
+                                </button>
+                                <button class="product-btn" data-index="2">
+                                    <span class="num">02</span>
+                                    <span class="label">RO 8115<br><small>Water Purifier RO Reverse Osmosis 4-stage</small></span>
+                                </button>
+                                <button class="product-btn" data-index="3">
+                                    <span class="num">03</span>
+                                    <span class="label">RO 9115<br><small>Water Purifier RO Reverse Osmosis 4-stage</small></span>
+                                </button>
+                            </div>
+                            <div class="product-display">
+                                <img id="purifier-image" src="images/purifier-1.png" alt="Purifier 1" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- ========== end product section ========== -->
+        <!-- ========== How to Subscribe Section ========== -->
+            <section class="subscribe-section">
+                <div class="container">
+                    <h2 class="subscribe-title" data-i18n="subscribe_title">How to Subscribe</h2>
+                    <div class="subscribe-image-wrapper">
+                        <img src="images/how-to-subscribe.png" alt="How to Subscribe Steps" class="subscribe-image" loading="lazy">
+                    </div>
+                </div>
+            </section>
+        <!-- ========== end how to subscribe section ========== -->
+        <!-- ========== For Business Section (Overlay Text on Image) ========== -->
+            <section class="business-section">
+                <div class="business-content">
+                    <p class="business-label" data-i18n="for_business_label">FOR BUSINESS</p>
+                    <h2 class="business-title" data-i18n="for_business_title">Simplify Daily Operations with Seamless Go Subscription Service</h2>
+                    <p class="business-desc" data-i18n="for_business_desc">
+                    It's the smarter choice for busy spaces—less downtime, fewer service costs, more peace of mind.
+                    </p>
+                    <a href="#" class="business-btn" data-i18n="contact_us">Contact Us</a>
+                </div>
+            </section>
+        <!-- ========== end for business section ========== -->
+        <!-- ========== Ready to Go Section ========== -->
+            <section class="ready-section">
+                <div class="ready-left">
+                    <img src="images/bg_ready_to_go_fix.png" alt="Glass of Water" loading="lazy">
+                </div>
+                <div class="ready-right">
+                    <h2 class="ready-title" data-i18n="ready_title">Ready to Go?<br>Let's Get Started!</h2>
+                    <a href="#" class="ready-btn" data-i18n="subscribe_now">Subscribe Now</a>
+                </div>
+            </section>
+        <!-- ========== end ready to go section ========== -->
+        <!-- ========== FAQ Section ========== -->
+            <section class="faq-section">
+                <div class="faq-header">
+                    <h2 data-i18n="faq_header">Frequently Asked Questions (FAQ)</h2>
+                    <a href="#" class="faq-contact-btn">Contact Us</a>
+                </div>
+
+                <div class="faq-container">
+                    <!-- LEFT-->
+                    <div class="faq-column">
+                        <div class="faq-item">
+                            <button class="faq-question" data-i18n="faq_q1">What is Seamless Go Subscription Service?</button>
+                            <div class="faq-answer">
+                                <p data-i18n="faq_a1">Seamless Go is a subscription program that lets you use MODENA home appliances with a more affordable monthly payment. With this program, you can enjoy the product without worrying about routine maintenance or other extra costs.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question"data-i18n="faq_q2">What’s included in a Seamless Go Subscription Service plan?</button>
+                            <div class="faq-answer">
+                                <p data-i18n="faq_a2">Your plan includes the product, routine service and maintenance, and warranty coverage for the full contract period.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" data-i18n="faq_q3">How does Seamless Go Subscription Service work?</button>
+                            <div class="faq-answer">
+                                <p data-i18n="faq_a3">Just choose a product from our catalog, pick your preferred subscription duration, and make your monthly payments based on your selected plan. We’ll deliver the product, and you can use it with full service and support throughout the contract.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" data-i18n="faq_q4">How do I pay for my Seamless Go Subscription Service?</button>
+                            <div class="faq-answer">
+                                <p data-i18n="faq_a4">Your monthly payments will be automatically debited from the debit or credit card you registered during sign-up.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" data-i18n="faq_q5">Will I Own the product after the contract ends?</button>
+                            <div class="faq-answer">
+                                <p>-</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" data-i18n="faq_q6">Where can I see the actual products included in Seamless Go Subscription Service?</button>
+                            <div class="faq-answer">
+                                <p>-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RIGHT -->
+                    <div class="faq-column">
+                        <div class="faq-item">
+                            <button class="faq-question" data-i18n="faq_q7">What products are available under Seamless Go Subscription Service?</button>
+                            <div class="faq-answer">
+                                <p data-i18n="faq_a7">Currently, Seamless Go Subscription Service is available for our Water Purifier series.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" data-i18n="faq_q8">Who can sign up for Seamless Go Subscription Service?</button>
+                            <div class="faq-answer">
+                                <p data-i18n="faq_a8">Seamless Go Subscription Service is open to individuals and companies who meet the following criteria: minimum age of 18 years, hold a valid ID (KTP or KITAS), and willing to go through a verification process.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question"data-i18n="faq_q9">What contract durations are available?</button>
+                            <div class="faq-answer">
+                                <p data-i18n="faq_a9">You can choose a contract duration of 3, 5, 6, or 7 years, depending on the product.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" data-i18n="faq_q10">Is there any upfront fee when signing up?</button>
+                            <div class="faq-answer">
+                                <p data-i18n="faq_a10">Yes, a down payment of at least one month's subscription fee is required at the start of your plan.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" data-i18n="faq_q11">Can I cancel my contract before it ends?</button>
+                            <div class="faq-answer">
+                                <p>-</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" data-i18n="faq_q12">Where can I sign up for Shamless Go Subscription Service</button>
+                            <div class="faq-answer">
+                                <p>-</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" data-i18n="faq_q13">Where can I read the Seamless Go Subscription Service Terms & Conditions?</button>
+                            <div class="faq-answer">
+                                <p data-i18n="faq_a13">You can find the full “Sales Contract Terms & Conditions” and “Service & Warranty Terms” on our official website.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========== end of FAQ Section ========== -->
+        </main>
+<!-- =================== FOOTER =================== -->
+        <footer>
+            <!-- Get in the Loop -->
+            <div class="footer-top">
+                <div class="footer-left">
+                    <h3 data-i18n="footer_get_in_loop">Get in the Loop</h3>
+                    <p data-i18n="footer_desc">Be the first to know all the best offers, news, and new products from MODENA.</p>
+                </div>
+                <div class="footer-right">
+                    <input type="email" placeholder="Enter Email" />
+                    <button data-i18n="subscribe_now">Subscribe</button>
+                </div>
+            </div>
+            <!-- Bahasa, Logo, Sosial Media -->
+            <div class="footer-middle">
+                <div class="footer-lang-row">
+                    <div class="footer-lang">
+                        <i class="fa-solid fa-globe"></i data-i18n="lang_label"> Indonesia, EN
+                    </div>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            <!-- Logo & Navigasi -->
+                <div class="footer-main">
+                    <div class="footer-main-left">
+                        <img class="logo" src="images/logo-modena.png" alt="MODENA Logo" />
+                        <p class="desc" data-i18n="footer_tagline">Crafting Comfort and Convenience</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Corporate</h4>
+                            <ul>
+                            <li><a href="#">Newsroom</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Find a Store</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Product</h4>
+                            <ul>
+                            <li><a href="#">Cooking</a></li>
+                            <li><a href="#">Cooling</a></li>
+                            <li><a href="#">Cleaning</a></li>
+                            <li><a href="#">Professional Cooking</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Service</h4>
+                            <ul>
+                            <li><a href="#">Service Center</a></li>
+                            <li><a href="#">Warranty Registration</a></li>
+                            <li><a href="#">Contact Service</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Program</h4>
+                            <ul>
+                            <li><a href="#">Trade In</a></li>
+                            <li><a href="#">Rental</a></li>
+                            <li><a href="#">CIAO</a></li>
+                            <li><a href="#">Product Registration</a></li>
+                            <li><a href="#">Modena Agent</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Policy Links dan Copyright -->
+            <div class="footer-legal">
+                <div class="footer-legal-left">
+                    <a href="#" data-i18n="privacy_policy">Privacy Policy</a>
+                    <a href="#" data-i18n="cookies_policy">Cookies Policy</a>
+                    <a href="#" data-i18n="terms_conditions">Terms and Conditions</a>
+                    <a href="#" data-i18n="sitemap">Sitemap</a>
+                    <a href="#" data-i18n="country">Indonesia</a>
+                </div>
+                <div class="footer-legal-right">
+                    <p data-i18n="copyright">© 2025 MODENA. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="Home.js"></script>
+    </body>
+</html>
